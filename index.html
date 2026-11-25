@@ -1,15 +1,137 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="{{ url_for('static', filename='style.css' ) }}">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.png">
+    <title>el .</title>
+    <meta name="description" content="Self-taught web developer from the Philippines building websites with Python and Flask. View my projects and contact me.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+        document.documentElement.dataset.theme = localStorage.getItem("theme") || 
+        (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <br>
-    <h1>Hello</h1><br><hr><br>
+    <header>
+        <a href="#hero" class="logo">Leody Lloyd</a>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Project</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+            <button type="button" id="theme-toggle">Dark mode</button>
+        </nav>
+    </header>
 
+    <main>
+        <section id="hero">
+            <p class="hello">Hello, I'm</p>
+            <h1>Leody Lloyd P. Collados</h1>
+            <p class="tagline">Self-taught web developer building websites with Python and Flask.</p>
+            <div class="buttons">
+                <a href="#project" class="btn">View my project</a>
+                <a href="#contact" class="btn btn-outline">Contact me</a>
+            </div>
+        </section>
 
+        <section id="about">
+            <h2>About me</h2>
+            <p>Hi, I'm Leody Lloyd, a self-taught web developer from the Philippines.</p>
+            <p>I build websites using Python Flask, HTML, and CSS.</p>
+            <p>I built and deployed my own Flask store website, and I'm now learning JavaScript to build more projects.</p>
+            <p>I'm looking for opportunities to work as a junior developer.</p>
+        </section>
 
+        <section id="skills">
+            <h2>Skills</h2>
 
+            <h3>Web Development</h3>
+            <div class="tags">
+                <span>Python</span>
+                <span>Flask</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Git &amp; GitHub</span>
+            </div>
 
+            <h3>Professional</h3>
+            <div class="tags">
+                <span>Customer Service</span>
+                <span>Communication</span>
+                <span>Teamwork</span>
+                <span>Sales &amp; Product Presentation</span>
+            </div>
+        </section>
+
+        <section id="project">
+            <h2>Projects</h2>
+            <div class="card">
+                <div class="slider">
+                    <img id="slide" src="Screenshot/Home.png" alt="Store screenshot" class="project-img">
+                    <div class="slider-controls">
+                        <button type="button" id="prev" class="btn">Prev</button>
+                        <span id="counter">1 / 5</span>
+                        <button type="button" id="next" class="btn">Next</button>
+                    </div>
+                </div>
+                <h3>Store website</h3>
+                <p>A store built with Python and Flask.</p>
+                <p class="ai-note">Built while learning, with AI help. Details in the README.</p>
+                <div class="buttons">
+                    <a href="https://Practice-002-store-project.onrender.com" target="_blank" rel="noopener noreferrer" class="btn">Live site</a>
+                    <a href="https://github.com/elcollados/Store-website" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub repo</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="job">
+                <h3>Technical Sales</h3>
+                <p class="job-date">October 2025 - May 2026</p>
+                <ul>
+                    <li>Assisted customers in selecting CCTV and security solutions based on their needs.</li>
+                    <li>Explained automatic gate, door-lock, biometric, and fire alarm (FDAS) systems to customers.</li>
+                    <li>Worked toward assigned sales targets through personal store visits.</li>
+                    <li>Coordinated with customers and team members on product requirements.</li>
+                    <li>Planned locations and managed time when visiting customer stores.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="job">
+                <h3>Bachelor of Science in Computer Engineering</h3>
+                <p class="job-date">Notre Dame of Midsayap College, 2020 - 2024</p>
+            </div>
+
+            <h3>Seminars &amp; Workshop</h3>
+            <ul>
+                <li>Seminar-Workshop on Artificial Intelligence (February 2023)</li>
+                <li>Startup Hackathon (March 2024)</li>
+                <li>Seminar Workshop on Home Automation: From Caves to Clouds (March 2024)</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Want to work together or just say hi? Reach me here:</p>
+            <ul>
+                <li>Email: <a href="mailto:leodycollados26@gmail.com">leodycollados26@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com/elcollados" target="_blank" rel="noopener noreferrer">
+  github.com/elcollados
+</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>© 2026 Leody Lloyd P. Collados</footer>
+
+    <script src="script.js"></script>
 </body>
-</html>
+</html>foot
