@@ -178,7 +178,7 @@ p {
 }
 
 .btn:hover {
-  transform: translateY(-3px);
+  transform: translateY(-1px);
 }
 
 .btn-outline {
@@ -211,7 +211,7 @@ p {
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-1px);
 }
 
 .card h3 {
@@ -289,6 +289,11 @@ section h3 {
   color: var(--on-accent);
 }
 
+
+.card + .card {
+  margin-top: 20px;
+}
+
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -315,3 +320,4 @@ section h3 {
     scroll-padding-top: 140px;
   }
 }
+
